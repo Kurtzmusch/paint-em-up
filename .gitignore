@@ -1,0 +1,7 @@
+*.swp
+TODO
+bin/
+peuconf/
+peumaps/
+.pvimrc
+
