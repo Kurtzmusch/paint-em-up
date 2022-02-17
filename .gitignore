@@ -1,6 +1,6 @@
 *.swp
 TODO
-./bin/*
+bin/
 peuconf/
 peumaps/
 .pvimrc
