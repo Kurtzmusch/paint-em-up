@@ -1,0 +1,12 @@
+deagle_pop.wav
+deagle_shoot2.wav
+deagle_shoot3.wav
+deagle_shoot.wav
+poop_splat.wav
+shoot1wav
+splat1.wav
+splat2.wav
+splat3.wav
+test2.wav
+testSound.wav
+zooka_shoot.wav

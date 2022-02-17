@@ -1,0 +1,19 @@
+
+#version 330 core
+
+in vec3 pos;
+in vec2 txc;
+
+out vec2 txc_forward;
+
+uniform mat4 projectionMatrix;
+uniform mat4 transformMatrix;
+uniform mat4 viewMatrix;
+
+void main( void ){
+
+	gl_Position = projectionMatrix * viewMatrix * transformMatrix * vec4( pos.x, pos.y, pos.z, 1.0 );
+
+	txc_forward = txc;
+
+}

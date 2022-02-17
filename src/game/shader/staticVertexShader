@@ -1,0 +1,20 @@
+
+#version 330 core
+
+in vec3 pos;
+in vec3 col;
+in vec3 nrm;
+
+out vec3 color;
+out vec3 normal;
+
+uniform mat4 projectionMatrix;
+uniform mat4 viewMatrix;
+
+void main( void ){
+
+	gl_Position = projectionMatrix * viewMatrix * vec4( pos.x, pos.y, pos.z, 1.0 );
+
+	color = col;
+	normal = nrm;
+}

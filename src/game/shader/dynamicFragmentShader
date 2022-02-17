@@ -1,0 +1,13 @@
+#version 330 core
+
+in vec2 txc_forward;
+
+out vec4 colorRGBA;
+
+uniform sampler2D txSampler;
+
+void main( void ){
+
+	colorRGBA = texture( txSampler, txc_forward );
+
+}

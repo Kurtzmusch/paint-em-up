@@ -1,0 +1,19 @@
+
+#version 330 core
+
+in vec2 vPos;
+in vec2 pPos;
+in vec3 col;
+
+out vec4 fwd_color;
+
+uniform mat4 projectionMatrix;
+uniform mat4 viewMatrix;
+
+void main( void ){
+
+	gl_Position = projectionMatrix * viewMatrix * vec4( (vPos.x+pPos.x), (vPos.y+pPos.y), 0.0, 1.0 );
+	
+	fwd_color = vec4( col.r, col.g, col.b, 1.0 );
+
+}

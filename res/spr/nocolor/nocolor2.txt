@@ -1,0 +1,9 @@
+spr_spawner_nocolor.png
+spr_bullet_nocolor.png
+spr_flag_nocolor.png
+spr_weapon_deagle_loaded_nocolor.png
+spr_weapon_deagle_reloading_nocolor.png
+spr_weapon_shot_loaded_nocolor.png
+spr_weapon_shot_reloading_nocolor.png
+spr_weapon_zooka_loaded_nocolor.png
+spr_weapon_zooka_reloading_nocolor.png

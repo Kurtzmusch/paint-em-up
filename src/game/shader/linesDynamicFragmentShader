@@ -1,0 +1,9 @@
+#version 330 core
+
+out vec4 colorRGBA;
+
+void main( void ){
+
+	colorRGBA = vec4( 1, 1, 1, 1 );
+
+}

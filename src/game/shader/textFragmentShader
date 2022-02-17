@@ -1,0 +1,29 @@
+
+#version 330 core
+
+in vec2 txc_forward;
+
+out vec4 colorRGBA;
+
+uniform sampler2D txSampler;
+uniform float whiteness;
+uniform float sample;
+uniform vec4 color;
+
+void main( void ){
+
+	if( sample == 1 ){
+		colorRGBA = texture( txSampler, txc_forward );
+		//vec4( color.x*brightness, color.y*brightness, color.z*brightness, color.w );
+		colorRGBA.r*=whiteness;
+		colorRGBA.g*=whiteness;
+		colorRGBA.b*=whiteness;
+		colorRGBA.r = color.r;
+		colorRGBA.g = color.g;
+		colorRGBA.b = color.b;
+	}
+	else{
+		//colorRGBA = texture( txSampler, txc_forward );
+		colorRGBA = color;
+	}
+}

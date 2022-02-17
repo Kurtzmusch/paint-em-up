@@ -1,0 +1,13 @@
+#version 330 core
+
+in vec3 pos;
+in vec3 col;
+
+uniform mat4 projectionMatrix;
+uniform mat4 viewMatrix;
+
+void main( void ){
+
+	gl_Position = projectionMatrix * viewMatrix * vec4( pos.x, pos.y, pos.z, 1.0 );
+	
+}

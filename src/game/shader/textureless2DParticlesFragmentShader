@@ -1,0 +1,10 @@
+
+#version 330 core
+
+in vec4 fwd_color;
+
+out vec4 colorRGBA;
+
+void main( void ){
+	colorRGBA = fwd_color;
+}
