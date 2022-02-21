@@ -5,4 +5,6 @@ peuconf/
 peumaps/
 dist/
 .pvimrc
+.syntastic_javac_config
+.paint-em-up.jar
 
