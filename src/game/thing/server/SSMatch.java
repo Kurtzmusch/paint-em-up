@@ -69,6 +69,10 @@ public class SSMatch {
 		FileInputStream fis;
 		
 		boolean loaded = false;
+		System.out.println(file);
+		if( file.equals("random") ) {
+			file = "default02";
+		}
 		try {
 			String mapsFolder = Game.applicationRoot.jarFileLocation + "/peumaps/";
 			fis = new FileInputStream( mapsFolder + file + ".map" );
