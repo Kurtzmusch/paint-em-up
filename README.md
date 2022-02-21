@@ -16,7 +16,7 @@ in order to play online someone will have to host a server. there is no server-o
 
 #### installation/setup
 
-single executable file:
+single executable file (linux/windows): [download latest .jar file](https://github.com/Kurtzmusch/paint-em-up/releases)
 
 #### building from source
 
